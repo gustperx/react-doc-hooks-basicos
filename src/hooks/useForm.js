@@ -1,7 +1,11 @@
 import { useState } from "react";
 
-export const userForm = (initialState = {}) => {
+export const useForm = (initialState = {}) => {
   const [values, setValues] = useState(initialState);
+
+  const reset = () => {
+    setValues(initialState);
+  };
 
   const hadleInputChange = ({ target }) => {
     setValues({
@@ -10,8 +14,5 @@ export const userForm = (initialState = {}) => {
     });
   };
 
-  return {
-    values,
-    hadleInputChange,
-  };
+  return [values, hadleInputChange, reset];
 };
