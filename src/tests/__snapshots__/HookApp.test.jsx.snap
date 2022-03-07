@@ -1,0 +1,11 @@
+// Vitest Snapshot v1
+
+exports[`Pruebas en HookApp > debe de hacer match con el snapshot 1`] = `
+<Fragment>
+  <h1
+    className="text-2xl text-orange-300"
+  >
+    Hola Mundo
+  </h1>
+</Fragment>
+`;
